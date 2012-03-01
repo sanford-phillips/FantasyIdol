@@ -1,0 +1,139 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<link class="jsbin" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1/themes/base/jquery-ui.css" rel="stylesheet"
+      type="text/css"/>
+<script class="jsbin" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<script class="jsbin" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.9/jquery-ui.min.js"></script>
+<script class="jsbin" src="./javascript/AmericanIdol.js"></script>
+<meta charset=utf-8/>
+<!--[if IE]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<script>
+
+</script>
+<style>
+    article, aside, figure, footer, header, hgroup,
+    menu, nav, section {
+        display: block;
+    }
+
+    .ss-choices {
+        margin: 0;
+        padding: 0;
+        width: 400px;
+        -webkit-padding-start: 40px;
+        background: white;
+    }
+    
+    .ss-choice-item,.ss-choice-label {
+        cursor:move !important;
+    }
+
+    hr, h1, .ss-q-title, .ss-form-desc {
+        background-color: #f3f3f3;
+    }
+
+    ol>:first-child:after {
+        content: "  (best)";
+    }
+
+    ol>:last-child:after {
+        content: "  (worst)";
+    }
+
+    .ss-form-container {
+        width: 500px
+    }
+
+    .ss-choices li {
+        margin: 0 3px 3px 3px;
+        padding: 0.4em;
+        padding-left: 1.5em;
+        font-size: 1.4em;
+        height: 22px;
+    }
+
+    #ss-choices li label {
+        position: absolute;
+        float: left;
+        margin-left: -1.0em;
+        width: 140px;
+    }
+
+    .ss-choice-label {
+        margin-left:5px;
+    }
+
+    body {
+        /*background-image: url('http://s4.daemonstv.com/tv/up/2011/02/american-idol-season10-top24-550x353.jpg');*/
+        background-repeat: repeat;
+        background-attachment: fixed;
+        color: black;
+    }
+</style>
+<title>Idol Bracket Round 2 - Top 24</title>
+</head>
+<body class="ss-base-body" dir="ltr">
+<div class="ss-form-container">
+    <div class="ss-form-heading"><h1 class="ss-form-title">Idol Bracket Round 2</h1>
+
+        <p></p>
+
+        <div class="ss-form-desc ss-no-ignore-whitespace">Reorder the top 25 contestants below, putting the best at the
+            top!
+        </div>
+        <p></p>
+        <hr class="ss-email-break" style="display:none;">
+    </div>
+    <div class="ss-form">
+        <form action="https://spreadsheets.google.com/formResponse?formkey=dDVCUjdvYU1McUtrOERldHl1eTJ0dkE6MQ&amp;embedded=true&amp;ifq"
+              method="POST" id="ss-form">
+
+            <br>
+
+            <div class="errorbox-good">
+                <div class="ss-item ss-item-required ss-text">
+                    <div class="ss-form-entry"><label class="ss-q-title" for="entry_1">Your name
+                        <span class="ss-required-asterisk">*</span></label>
+                        <label class="ss-q-help" for="entry_1"></label>
+                        <input type="text" name="entry.1.single" value="" class="ss-q-short" id="entry_1" placeholder="name"></div>
+                </div>
+            </div>
+            <br>
+
+            <div class="errorbox-good">
+                <div class="ss-item ss-item-required ss-text">
+                    <div class="ss-form-entry"><label class="ss-q-title" for="entry_2">Your email
+                        <span class="ss-required-asterisk">*</span></label>
+                        <label class="ss-q-help" for="entry_2"></label>
+                        <input type="text" name="entry.2.single" value="" class="ss-q-short" id="entry_2" placeholder="email"></div>
+                </div>
+            </div>
+            <br>
+
+            <div class="ss-item ss-item-required ss-checkbox">
+                <div class="ss-form-entry"><label class="ss-q-title" for="entry_0">Rank The Contestants From Best To
+                    Worst
+                </label>
+                    <ol class="ss-choices"></ol>
+                </div>
+            </div>
+    </div>
+
+    <br>
+
+    <br>
+    <input type="hidden" name="pageNumber" value="0">
+    <input type="hidden" name="backupCache" value="">
+
+    <div class="ss-item ss-navigate">
+        <div class="ss-form-entry">
+            <input type="submit" name="submit" value="Submit"></div>
+    </div>
+    </form>
+</div>
+</div></div></div>
+</body>
+</html>
