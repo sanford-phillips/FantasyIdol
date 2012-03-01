@@ -30,7 +30,7 @@ var contestants = [
     "Reed Grimm",
     "Shannon Magrane",
     "Skylar Laine"
-    ];
+];
 
 $(document).ready(function () {
 
